@@ -59,4 +59,4 @@ let sliderInterval = setInterval(changeImg, 3000);
 //----------
 
 
-AOS.init();
+// AOS.init();
