@@ -1,0 +1,41 @@
+.clients {
+    background-color: white;
+    color: black; 
+    text-align: center;
+    padding: 8rem 0;
+
+    &__title1 {
+        @include title1;
+    }
+
+    &__title2 {
+        @include title2;
+        padding: 1rem 0;
+    }
+
+    &__text {
+        font-family: $Average, serif;
+        font-size: 1.5rem;
+        line-height: 1.6;
+        color: #41403f;
+        max-width: 70%;
+        margin: 0 auto 2rem;
+    }
+
+    &__name {
+        font-family: $Montserrat, sans-serif;
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 1.6;
+        text-transform: uppercase;
+        color: black; 
+        padding-top: 2rem;
+    }
+
+    &__firm {
+        font-family: $Average, serif;
+        font-size: 1.5rem;
+        color: $gold;
+        
+    }
+}

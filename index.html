@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steakville Restaurant</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/91be3ea931.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Average|Montserrat:400,700&display=swap" rel="stylesheet">
+    <script src="js/scripts.js" async></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <!-- -----------------------MINIBAR--------------------- -->
+        <aside class="minibar">
+            <div class="minibar__container container">
+                <div class="minibar__contact">
+                    <span class="minibar__address">New Scotland Yard, 8-10 Broadway, Westminster, London SWIH0BG</span>
+                </div>
+                <div class="minibar__social">
+                    <i class="fab fa-facebook-square minibar__icon"></i>
+                    <i class="fab fa-instagram-square minibar__icon"></i>
+                    <i class="fab fa-twitter-square minibar__icon"></i>
+                </div>
+            </div>
+        </aside>
+        <!-- -----------------------NAVBAR--------------------- -->
+        <nav class="navbar">
+            <div class="navbar__container container">
+                <img src="assets/Logo.png" class="navbar__logo" alt="logo of restaurant"/>
+                <ul class="navbar__list">
+                    <li class="navbar__item"><a href="#">Home</a></li>
+                    <li class="navbar__item"><a href="#reservations">Reservations</a></li>
+                    <li class="navbar__item"><a href="#menu">Menu</a></li>
+                    <li class="navbar__item"><a href="#blog">Blog</a></li>
+                    <li class="navbar__item"><a href="#features">Features</a></li>
+                    <li class="navbar__item"><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="navbar__hamburger">
+                    <div class="navbar__hamburger--line"></div>
+                    <div class="navbar__hamburger--line"></div>
+                    <div class="navbar__hamburger--line"></div>
+                </div>
+                <ul class="navbar__list--mobile">
+                    <li class="navbar__item--mobile"><a class="navbar__link--mobile" href="#">Home</a></li>
+                    <li class="navbar__item--mobile"><a class="navbar__link--mobile" href="#reservations">Reservations</a></li>
+                    <li class="navbar__item--mobile"><a class="navbar__link--mobile" href="#menu">Menu</a></li>
+                    <li class="navbar__item--mobile"><a class="navbar__link--mobile" href="#blog">Blog</a></li>
+                    <li class="navbar__item--mobile"><a class="navbar__link--mobile" href="#features">Features</a></li>
+                    <li class="navbar__item--mobile"><a class="navbar__link--mobile" href="#contact">Contact</a></li>
+                </ul>        
+
+            </div>
+        </nav>
+        <!-- -----------------------HEADER--------------------- -->
+        <header class="header">
+            <div class="header__container">
+                <h3 class="header__welcome">Welcome to</h3>
+                <h1>Steakville Restaurant</h1>
+                <span class="header__address">New Scotland Yard, 8-10 Broadway, Westminster, London SWIH0BG</span>
+                <img src="assets/Arrow.png" class="arrow" alt="arrow picture" data-aos="fade-right" data-aos-offset="250" data-aos-duration="1000"
+                data-aos-easing="ease-in-out"/>
+                <button type="button" class="gold-btn">Menu</button>
+            </div>            
+        </header>
+        <!-- -----------------------BREAK--------------------- -->
+        <div class="break">
+            <img src="assets/breakLogo.png" alt="logo of restaurant" class="break__logo">
+        </div>
+        <!-- -----------------------GALLERY--------------------- -->
+        <section class="gallery">
+            <div class="gallery__arrow"><img src="assets/caffe.png" alt="arrow left" class="gallery__arrow--left">
+            </div>
+
+            <div class="gallery__container">
+                <img src="assets/gallery1.jpg" alt="gallery image" class="gallery__img">
+                <div class="gallery__box">
+                    <h2 class="gallery__title1">The best cuisine</h2>
+                    <h3 class="gallery__title2">In your town</h3>
+                    <p class="gallery__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia unde consequuntur 
+                        molestiae consequatur dolorem, officia, doloribus ea eius dolore perferendis, voluptatibus
+                        sit dolores voluptatem animi molestias. Cumque tempore sequi possimus quam fugit aliquid 
+                        optio tenetur laudantium.</p>
+                    <button type="button" class="gold-btn">Menu</button> 
+                </div>
+                <div class="gallery__dots">
+                    <span id="dot-1" class="gallery__dot gallery__dot--active"></span>
+                    <span id="dot-2" class="gallery__dot"></span>
+                    <span id="dot-3" class="gallery__dot"></span>
+                    <span id="dot-4" class="gallery__dot"></span>
+                    <span id="dot-5" class="gallery__dot"></span>
+                    <span id="dot-6" class="gallery__dot"></span>
+
+                </div>
+            </div>
+
+            <div class="gallery__arrow"><img src="assets/spoon.png" alt="arrow right" class="gallery__arrow--right"></div>
+        </section>
+        <!-- -----------------------BREAK--------------------- -->
+        <div class="break">
+            <img src="assets/breakLogo.png" alt="logo of restaurant" class="break__logo">
+        </div>
+        <!-- -----------------------ANOTHER HEADER--------------------- -->
+        <section class="organic animate-up">
+            <div class="organic__social">
+                <div class="organic__icon"><a href="#"><i class="fab fa-pinterest"></i></a></div>
+                <div class="organic__icon"><a href="#"><i class="fab fa-behance"></i></a></div>
+                <div class="organic__icon"><a href="#"><i class="fab fa-dribbble"></i></a></div>
+            </div>
+            <div class="organic__wrapper">
+                <div class="organic__info">
+                    <h2 class="organic__title">Organic food</h2>
+                    <img src="assets/Arrow.png" class="arrow" alt="arrow picture" data-aos="fade-right" data-aos-offset="120" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"/>
+                    <p class="organic__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa 
+                    velit ipsam officiis tenetur nisi hic quaerat sunt aliquid praesentium, placeat iusto 
+                    cupiditate laudantium magnam deserunt ad eveniet veniam dolorum, labore repudiandae cum 
+                    voluptate iste!</p>
+                    
+                    <button class="white-btn">Menu</button> 
+                </div>    
+            </div>
+        </section>
+          <!-- -----------------------BREAK--------------------- -->
+          <div class="break">
+            <img src="assets/breakLogo.png" alt="logo of restaurant" class="break__logo">
+        </div>
+        <!-- -----------------------WELCOME TO--------------------- -->
+        <section class="welcome">
+            <div class="welcome__wrapper container">
+                <img src="assets/welcome1.jpg" class="welcome__image image1" alt="photo from restaurant" data-aos="fade-down" data-aos-duration="3000"/>
+                <img src="assets/welcome2.jpg" class="welcome__image image2" alt="photo from restaurant" data-aos="fade-down" data-aos-duration="3000"/>
+                <div class="welcome__box">
+                        <h3 class="welcome__title1">Welcome to</h3>
+                        <h2 class="welcome__title2">Steakville</h2>
+                        <p class="welcome__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vero magni 
+                            sunt sed voluptatum aliquam ipsam enim nam, maiores, mollitia praesentium totam cumque corporis 
+                            obcaecati doloremque inventore repellendus esse ut eveniet est excepturi? Quis assumenda nulla 
+                            vero dignissimos, expedita magni inventore atque aperiam explicabo rem modi, ut tempora ratione, 
+                            ex omnis? In natus eaque voluptatibus eum soluta.</p>
+                </div>
+            </div>
+        </section>
+            <!-- -----------------------BREAK--------------------- -->
+            <div class="break">
+                <img src="assets/breakLogo.png" alt="logo of restaurant" class="break__logo">
+            </div>
+             <!-- -----------------------HISTORY--------------------- -->
+            <section id="blog" class="history">
+                <div class="history__wrapper">
+                    <h3 class="history__title1">Discover</h3>
+                    <h2 class="history__title2">Our history</h2>
+                    <img src="assets/Arrow.png" class="arrow" alt="arrow picture" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"/>
+                    <p class="history__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Cupiditate totam suscipit cum eligendi odio, facere illum, eius magni non distinctio 
+                        aperiam unde possimus. Deserunt reiciendis officia illum commodi vel consequuntur aliquid corrupti 
+                        officiis enim amet! Impedit aliquam, possimus expedita cumque incidunt corrupti sint delectus 
+                        consectetur magnam, excepturi earum sed exercitationem soluta officia, amet fugit?</p>
+                    <button type="button" class="gold-btn">Menu</button> 
+                </div>
+            </section>
+             <!-- -----------------------BREAK Cite--------------------- -->
+             <div class="cite">
+                <q class="cite__text" data-aos="zoom-in" data-aos-duration="2000"
+                data-aos-easing="ease-in-out">"Ask not what you can do for your country. Ask what's for lunch."</q>
+                <cite class="cite__author">Orson Welles</cite>
+            </div>
+            <!-- -----------------------MENU--------------------- -->
+            <section id="menu" class="menu">
+                <h3 class="menu__title1">Our Dishes</h3>
+                <h2 class="menu__title2">Menu</h2>
+                <div class="menu__wrapper">
+                    <div class="menu__card" data-aos="flip-left" data-aos-duration="2000"
+                    data-aos-easing="ease-in-out">
+                        <img src="assets/bbq.png" alt="image of bbq burger" class="menu__img"/>
+                        <h3 class="menu__title">BBQ Chicken</h3>
+                        <h4 class="menu__subtitle">Big and Meaty</h4>
+                        <p class="menu__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Qui iste at sequi. Distinctio, harum? Molestias.</p>
+                        <span class="menu__price">$50.00</span>
+                    </div>
+                    <div class="menu__card" data-aos="flip-right" data-aos-duration="2000" >
+                        <img src="assets/whope.png" alt="image of whope burger" class="menu__img"/>
+                        <h3 class="menu__title">Whope Sandwich</h3>
+                        <h4 class="menu__subtitle">Big and Meaty</h4>
+                        <p class="menu__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Qui iste at sequi. Distinctio, harum? Molestias exercitationem a eligendi est.</p>
+                        <span class="menu__price">$45.50</span>
+                    </div>
+                    <div class="menu__card" data-aos="flip-left" data-aos-duration="2000">
+                        <img src="assets/burger.png" alt="image of homeburger" class="menu__img"/>
+                        <h3 class="menu__title">Homestyle Burger</h3>
+                        <h4 class="menu__subtitle">Big and Meaty</h4>
+                        <p class="menu__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Qui iste at sequi. Distinctio, harum? Molestias.</p>
+                        <span class="menu__price">$34.00</span>
+                    </div>
+                    <div class="menu__card" data-aos="flip-right" data-aos-duration="2000">
+                        <img src="assets/bacon.png" alt="image of bacon burger" class="menu__img"/>
+                        <h3 class="menu__title">BAcon Sandwich</h3>
+                        <h4 class="menu__subtitle">Big and Meaty</h4>
+                        <p class="menu__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Qui iste at sequi. Distinctio, harum? Molestias exercitationem a eligendi est.</p>
+                        <span class="menu__price">$75.00</span>
+                    </div>
+                </div>
+            </section>
+            <section class="menu2">
+                <h3 class="menu2__title1">Steakville</h3>
+                <h2 class="menu2__title2">Our menu</h2>
+                <p class="menu2__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Culpa aliquam adipisci corporis neque molestiae fugiat laborum accusamus praesentium vitae
+                     officiis magni necessitatibus, molestias amet perspiciatis facilis voluptatum soluta s
+                     uscipit! Molestias aliquid quos numquam repellat!</p>
+                <div class="menu2__wrapper container">
+                    <div class="card2" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="assets/menu2a.png" alt="picture of dishes" class="card2__img"/>
+                        <div class="card2__name">
+                            <h3 class="card2__title">Poblano qeso spinach dip</h3>
+                            <p class="card2__description">Creamy queso is infused with spicy Poblano peppers</p>
+                        </div>
+                        <span class="card2__price">$14.99</span>
+                    </div>
+                    <div class="card2" data-aos="fade-left" data-aos-duration="1000" >
+                        <img src="assets/menu2b.png" alt="picture of dishes" class="card2__img"/>
+                        <div class="card2__name">
+                            <h3 class="card2__title">Boneless buffalo wings</h3>
+                            <p class="card2__description">This wings are legendary!</p>
+                        </div>
+                        <span class="card2__price">$52.99</span>
+                    </div>
+                    <div class="card2" data-aos="fade-right" data-aos-duration="1250">
+                        <img src="assets/menu2c.png" alt="picture of dishes" class="card2__img"/>
+                        <div class="card2__name">
+                            <h3 class="card2__title">Grilled filet mignon</h3>
+                            <p class="card2__description">The most tender of all steaks!</p>
+                        </div>
+                        <span class="card2__price">$32.99</span>
+                    </div>
+                    <div class="card2" data-aos="fade-left" data-aos-duration="1250">
+                        <img src="assets/menu2d.png" alt="picture of dishes" class="card2__img"/>
+                        <div class="card2__name">
+                            <h3 class="card2__title">Poblano qeso spinach dip</h3>
+                            <p class="card2__description">Creamy queso is infused with spicy Poblano peppers</p>
+                        </div>
+                        <span class="card2__price">$14.99</span>
+                    </div>
+                    <div class="card2" data-aos="fade-right" data-aos-duration="1500">
+                        <img src="assets/menu2e.png" alt="picture of dishes" class="card2__img"/>
+                        <div class="card2__name">
+                            <h3 class="card2__title">Grilled cedar plank salmon</h3>
+                            <p class="card2__description">A fresh filet from North Atlantic salmon is rubbed...</p>
+                        </div>
+                        <span class="card2__price">$14.99</span>
+                    </div>
+                    <div class="card2" data-aos="fade-left" data-aos-duration="1500">
+                        <img src="assets/menu2f.png" alt="picture of dishes" class="card2__img"/>
+                        <div class="card2__name">
+                            <h3 class="card2__title">Grilled cedar plank salmon</h3>
+                            <p class="card2__description">A fresh filet from North Atlantic salmon is rubbed...</p>
+                        </div>
+                        <span class="card2__price">$14.99</span>
+                    </div>
+                    <div class="card2" data-aos="fade-right" data-aos-duration="1750">
+                        <img src="assets/menu2g.png" alt="picture of dishes" class="card2__img"/>
+                        <div class="card2__name">
+                            <h3 class="card2__title">Mozzarella moons</h3>
+                            <p class="card2__description">Mozzarella cheese</p>
+                        </div>
+                        <span class="card2__price">$42.99</span>
+                    </div>
+                    <div class="card2" data-aos="fade-left"data-aos-duration="1750">
+                        <img src="assets/menu2h.png" alt="picture of dishes" class="card2__img"/>
+                        <div class="card2__name">
+                            <h3 class="card2__title">Grilled filled mignon</h3>
+                            <p class="card2__description">The most tender of all steaks!</p>
+                        </div>
+                        <span class="card2__price">$32.99</span>
+                    </div>
+                    <div class="card2" data-aos="fade-right" data-aos-duration="2000">
+                        <img src="assets/menu2i.png" alt="picture of dishes" class="card2__img"/>
+                        <div class="card2__name">
+                            <h3 class="card2__title">Boneless buffalo wings</h3>
+                            <p class="card2__description">This wings are legendary!</p>
+                        </div>
+                        <span class="card2__price">$52.99</span>
+                    </div>
+                    <div class="card2" data-aos="fade-left" data-aos-duration="2000">
+                        <img src="assets/menu2j.png" alt="picture of dishes" class="card2__img"/>
+                        <div class="card2__name">
+                            <h3 class="card2__title">Mozzarella moons</h3>
+                            <p class="card2__description">Mozzarella cheese</p>
+                        </div>
+                        <span class="card2__price">$42.99</span>
+                    </div>
+                </div>
+            </section>
+             <!-- -----------------------HOURS--------------------- -->
+            <section id="features" class="hours">
+                <h3 class="hours__title1">Your welcome</h3>
+                <h2 class="hours__title2">Opening hours</h2>
+                <div class="hours__wrapper container">
+                    <img src="assets/hours.png" alt="" class="hours__img"/>
+                    <div class="hours__block">
+                        <h4 class="hours__meal">Dinner:</h4>
+                            <span class="hours__when">Tuesday to Saturday 5.30 pm til 9.00 pm</span>
+                            <span class="hours__when">Bank Holiday Sundays 6pm to 9 pm</span>
+                        <h4 class="hours__meal">Lunch:</h4>
+                            <span class="hours__when">Friday 12.30 til 2.30 pm</span>
+                            <span class="hours__when">Sunday 12.30 til 4.30 pm</span>
+                    </div>
+                </div>
+            </section>
+            <!-- -----------------------STAFF--------------------- -->
+            <section class="staff">
+                <h3 class="staff__title1">Our Staff</h3>
+                <h2 class="staff__title2">Meet our chefs</h2>
+                <div class="staff__wrapper container">
+                    <div class="chef" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50">
+                        <img src="assets/chef1.png" alt="photo of James Kirk" class="chef__img" >
+                        <h3 class="chef__name">James T. Kirk</h3>
+                        <span class="chef__position">Captain</span>
+                        <div class="chef__icons">
+                            <i class="far fa-eye"></i>
+                            <i class="fas fa-retweet"></i>
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <p class="chef__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Unde accusantium modi aut tempora sunt! Itaque, soluta facilis!</p>
+                    </div>
+                    <div class="chef" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1000">
+                        <img src="assets/chef2.png" alt="photo of Leonard McCoy" class="chef__img">
+                        <h3 class="chef__name">Leonard McCoy</h3>
+                        <span class="chef__position">Doctor Not A...</span>
+                        <div class="chef__icons">
+                            <i class="far fa-eye"></i>
+                            <i class="fas fa-retweet"></i>
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <p class="chef__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Unde accusantium modi aut tempora sunt! Itaque, soluta facilis!</p>
+                    </div>
+                    <div class="chef" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1500">
+                        <img src="assets/chef3.png" alt="photo of Hikaru Sulu" class="chef__img">
+                        <h3 class="chef__name">Hikaru Sulu</h3>
+                        <span class="chef__position">Pilot</span>
+                        <div class="chef__icons">
+                            <i class="far fa-eye"></i>
+                            <i class="fas fa-retweet"></i>
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <p class="chef__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Unde accusantium modi aut tempora sunt! Itaque, soluta facilis!</p>
+                    </div>
+                </div>
+            </section>
+            <!-- -----------------------STAFF2--------------------- -->
+            <section class="staff2">
+                <h3 class="staff2__title1">Our Staff</h3>
+                <h2 class="staff2__title2">Meet our chefs</h2>
+                <p class="staff2__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Quisquam, debitis repudiandae. Suscipit non, laborum vel necessitatibus fuga labore obcaecati. 
+                     Et eveniet minima sequi ipsa, aperiam nulla dicta quasi reiciendis deserunt fugit explicabo nam 
+                     totam minus consectetur.</p>
+                <div class="staff2__wrapper container">
+                    <div class="chef2">
+                        <img src="assets/staff1.png" alt="photo of James Kirk" class="chef2__img" data-aos="flip-right" data-aos-duration="2000" data-aos-easing="ease-in-sine">
+                        <h3 class="chef__name">James T. Kirk</h3>
+                        <span class="chef__position">Captain</span>
+                        <div class="chef2__icons">
+                            <i class="far fa-eye"></i>
+                            <i class="fas fa-retweet"></i>
+                            <i class="fas fa-flask"></i>
+                        </div>
+                    </div>
+                    <div class="chef2">
+                        <img src="assets/staff2.png" alt="photo of Leonard McCoy" class="chef2__img" data-aos="flip-right" data-aos-duration="2000" data-aos-easing="ease-in-sine">
+                        <h3 class="chef__name">Leonard McCoy</h3>
+                        <span class="chef__position">Doctor Not A...</span>
+                        <div class="chef2__icons">
+                            <i class="far fa-eye"></i>
+                            <i class="fas fa-retweet"></i>
+                            <i class="fas fa-flask"></i>
+                        </div>
+                    </div>
+                    <div class="chef2">
+                        <img src="assets/staff3.png" alt="photo of Hikaru Sulu" class="chef2__img" data-aos="flip-right" data-aos-duration="2000" data-aos-easing="ease-in-sine">
+                        <h3 class="chef__name">Hikaru Sulu</h3>
+                        <span class="chef__position">Pilot</span>
+                        <div class="chef2__icons">
+                            <i class="far fa-eye"></i>
+                            <i class="fas fa-retweet"></i>
+                            <i class="fas fa-flask"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <!-- -----------------------RESERVATIONS--------------------- -->
+            <section id="reservations" class="reservations">
+                <h3 class="reservations__title1">Reservation</h3>
+                <h2 class="reservations__title2">Book a table</h2>
+                <img src="assets/Arrow.png" class="arrow" alt="arrow picture" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000"
+                data-aos-easing="ease-in-out"/>
+                <div class="reservations__wrapper">
+                    <input type="text" class="reservations__time" placeholder="Time" onfocus="(this.type='time')">
+                    <input type="text" class="reservations__date" placeholder="Date" onfocus="(this.type='date')">
+                    <select name="People" class="reservations__people" placeholder="People">
+                        <option value="0">People</option>
+                        <option value="1">1 person</option>
+                        <option value="2">2 people</option>
+                        <option value="3">3 people</option>
+                        <option value="4">4 people</option>
+                        <option value="5">5 people</option>
+                        <option value="5+">More than 5</option>
+                    </select>
+                </div>
+                <button type="button" class="gold-btn">Book a table</button>
+            </section>
+            <!-- -----------------------CLIENTS--------------------- -->
+            <section class="clients">
+                <h3 class="clients__title1">Our best clients</h3>
+                <h2 class="clients__title2">Happy customers</h2>
+                <img src="assets/Arrow.png" class="arrow" alt="arrow picture" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000"
+                data-aos-easing="ease-in-out"/>
+                <p class="clients__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Explicabo ea recusandae, a dolor nemo numquam facere aspernatur, 
+                     tenetur voluptatem perferendis doloribus ut culpa vel mollitia? Magnam veniam laboriosam deserunt 
+                     rerum ex perferendis, facere similique repudiandae! Eveniet.</p>
+                <h4 class="clients__name">Bad Comedian</h4>
+                <span class="clients__firm">Movie Critic</span>
+            </section>
+              <!-- -----------------------BREAK--------------------- -->
+              <div class="break">
+                <img src="assets/breakLogo.png" alt="logo of restaurant" class="break__logo">
+            </div>
+            <!-- -----------------------NEWSLETTER--------------------- -->
+            <section id="contact" class="newsletter">
+                <h3 class="newsletter__title">Subscribe to our newsletter</h3>
+                <img src="assets/Arrow.png" class="arrow" alt="arrow picture" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000"
+                data-aos-easing="ease-in-out"/>
+                <form action="get">
+                    <input type="email" class="newsletter__email" placeholder="Email">
+                    <button type="button" class="gold-btn">Subscribe</button>
+                </form>
+            </section>
+            <aside class="minibar">
+                <div class="minibar__container container">
+                    <div class="minibar__contact">
+                        <span class="minibar__final">Images from Unsplash // Coded by undstory 2020</span>
+                    </div>
+                </div>
+            </aside>
+            
+
+            
+            
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>        
+</body>
+</html>
+
+<!-- sass --watch scss/style.scss:css/style.css --style compressed -->

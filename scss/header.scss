@@ -1,0 +1,70 @@
+.header {
+    background-color: $bgBlack;
+    height: 90vh;
+    background-image: url(../assets/pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15rem;
+        min-height: 50vh;
+        text-align: center;
+    }
+    
+    &__welcome {
+        font-family: $WildYouth;
+        color: $gold;
+        font-size: 5rem;
+    }
+}
+
+h1 {
+    font-family: $Average, serif;
+    font-size: 7rem;
+    color: white;
+    padding: 2rem;
+}
+
+.header__address {
+    color: white;
+    font-size: 1.6rem;
+    font-family: $Average, serif;
+}
+
+.arrow {
+    padding: 4rem 0; 
+}
+
+.gold-btn {
+   @include goldButton;
+   transition: all .5s ease;
+
+   &:hover {
+       background-color: #de9b4c;
+   }
+}
+
+.break {
+    text-align: center;
+
+    &__logo {
+        padding: 3rem;
+    }
+}
+
+
+
+@media all and (max-width: 767px){
+    .header__container {
+        padding-top: 8rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+}

@@ -1,0 +1,95 @@
+.menu2 {
+    background-color: #292929;
+    color: white;
+    text-align: center;
+    padding: 8rem 2rem;
+
+    &__title1 {
+        @include title1;
+    }
+
+    &__title2 {
+        @include title2;
+        padding: 1rem 0 3rem;
+    }
+
+    &__text {
+        font-family: $Average, serif;
+        font-size: 1.5rem;
+        color: $bgGrey;
+        line-height: 1.6;
+        padding: 0 12rem;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 3rem;
+        padding: 4rem;
+    }
+}
+
+.card2 {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    text-align: left;
+
+    &__img {
+        grid-column: 1;        
+    }
+
+    &__name {
+        grid-column: 2/3;
+        padding-left: 1rem;
+    }
+
+    &__title {
+        font-family: $Montserrat, sans-serif;
+        font-size: 1.6rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.8;
+    }
+
+    &__description {
+        font-family: $Average, serif;
+        font-size: 1.5rem;
+        color: $gold;
+        line-height: 2;
+    }
+
+    &__price {
+        grid-column: 3/4;
+        font-family: $Montserrat, sans-serif;
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 1.8;
+        justify-self: end;
+    }
+}
+
+@media all and (max-width: 767px){
+
+    .menu2__wrapper {
+        grid-template-columns: none;
+        justify-items: left;
+        padding: 4rem 1rem;
+    }
+
+    .menu2__text {
+        padding: 0 2rem;
+    }
+
+    .card2__img {
+        padding-right: 2rem;
+    }
+
+    .card2__title {
+        font-size: 1.3rem;
+    }
+
+    .card2__descripion {
+        font-size: 1.1rem;
+    }
+}

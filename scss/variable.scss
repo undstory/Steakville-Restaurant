@@ -1,0 +1,48 @@
+//colors 
+
+$gold: #e4bb7a; 
+$darkBlack: #262626;
+$bgBlack: #3f3f3f;
+$bgGrey: #e0e0e0; 
+$littleGrey: #e2e2e2;
+$title2: #1b1b1b;
+$text: #4d4d4d;
+
+//fonts
+
+@font-face {
+    font-family: 'Wild Youth';
+    src: url(../fonts/WildYouth-Regular.otf);
+}
+$Average: 'Average';
+$Montserrat: 'Montserrat';
+$WildYouth: 'Wild Youth';
+
+//mixin 
+
+@mixin goldButton {
+    width: 17.2rem;
+    height: 5rem;
+    background-color: $gold;
+    color: #121212; 
+    font-family: $Montserrat;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    outline-color: #121212;
+}
+
+@mixin title1 {
+    font-family: $WildYouth;
+    font-size: 4.5rem;
+    color: $gold;
+}
+
+@mixin title2 {
+    font-family: $Montserrat, sans-serif;
+    font-size: 3.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

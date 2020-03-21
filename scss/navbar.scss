@@ -1,0 +1,138 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: $darkBlack;
+    color: white;
+    z-index: 10000;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.navbar__item, .navbar__item--mobile {
+    font-size: 1.6rem;
+    font-family: $Montserrat, sans-serif;
+    padding-left: 2.8rem;
+
+    a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+        &:hover {
+            color: $gold;
+            border-bottom: 2px solid $gold;
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+.navbar__hamburger {
+    height: 2.75rem;
+    width: 3rem; 
+    position: relative;  
+    cursor: pointer;
+    transition: .2s;
+}
+
+.navbar__hamburger.active {
+    transform: rotate(90deg);
+}
+
+.navbar__hamburger--line {
+    height: .5rem;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    border-radius: 2px;
+
+    &:nth-of-type(1) {
+        top: 0;
+    }
+   
+    &:nth-of-type(2) {
+        top: calc(50% - .25rem);
+    }
+
+    &:nth-of-type(3) {
+        bottom: 0;
+    }
+}
+
+.navbar__hamburger.active .navbar__hamburger--line {
+    height: .4rem;
+    width: 2.5rem;
+    background-color: white;
+    position: absolute;
+    border-radius: 2px;
+    transition:  top .2s .2s, bottom .2s .2s, opacity .2s .2s, transform .2s .4s;
+
+    &:nth-of-type(1) {
+        top: calc(50% - .25rem);
+        transform: rotate(45deg);
+    }
+   
+    &:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    &:nth-of-type(3) {
+        bottom: calc(50% - .25rem);
+        transform: rotate(-45deg);
+    }
+}
+
+.navbar__hamburger, .navbar__list--mobile {
+    display: none;
+}
+
+@media all and (max-width: 1300px){
+    .navbar__container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media all and (max-width: 767px){
+    .navbar__list {
+        display: none;
+    }
+
+    .navbar__logo {
+        padding-left: 2rem;
+    }
+
+    .navbar__hamburger {
+        display: block;
+    }
+
+    .navbar__list--mobile {
+        position: absolute;
+        top: 8rem;
+        left: 0;
+        right: 0;
+        max-width: 100%;
+        background-color: $darkBlack;
+        padding: 2rem;
+        border-top: 2px solid $gold;
+    }
+
+    .navbar__item--mobile {
+        text-align: center;
+        padding: 1rem 1.5rem;
+
+        a {
+            color: $gold;
+        }
+    }
+
+}

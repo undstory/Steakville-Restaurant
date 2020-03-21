@@ -1,0 +1,39 @@
+.minibar {
+    line-height: 1.5;
+    font-size: 1.4rem;
+    background-color: $gold;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .55rem 0;
+    }
+
+    &__contact, &__final {
+        font-family: $Average, serif;
+    }
+}
+
+.minibar__icon {
+    padding-left: 1rem; 
+    font-size: 1.6rem;
+    cursor: pointer;
+
+    &:hover {
+        color: #931010;
+    }
+}
+
+@media all and (max-width: 1300px){
+    .minibar__container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media all and (max-width: 767px){
+    .minibar {
+        display: none;
+    }
+}

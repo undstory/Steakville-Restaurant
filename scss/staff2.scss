@@ -1,0 +1,58 @@
+.staff2 {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 8rem 2rem;
+    
+
+    &__title1 {
+        @include title1;
+    }
+
+    &__title2 {
+        @include title2;
+        padding: 1rem 0 3rem;
+    }
+
+    &__text {
+        font-family: $Average, serif;
+        font-size: 1.5rem;
+        line-height: 1.6;
+        margin: 0 auto;
+        padding: 0 2rem;
+        width: 80%;
+        padding-bottom: 5rem;
+    }
+
+    &__wrapper {
+        display: flex; 
+        flex-direction: row;
+    }
+}
+
+.chef2 {
+
+    display: flex;
+    flex-direction: column;
+
+    &__img {
+        max-width: 100%;
+        padding-bottom: 4rem; 
+    }
+
+    &__icons {
+        padding: 3rem 2rem;
+
+        i {
+            font-size: 1.5rem;
+            color: black;
+            padding: 1rem;
+        }
+    }
+}
+@media all and (max-width: 767px){
+    .staff2__wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

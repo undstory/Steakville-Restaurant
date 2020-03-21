@@ -1,0 +1,53 @@
+.reservations {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 8rem 2rem;
+    
+    &__title1 {
+        @include title1;
+    }
+
+    &__title2 {
+        @include title2;
+        padding: 1rem 0;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 70%;
+        margin: 0 auto;
+
+        input, select {
+            height: 4.8rem;
+            width: 26rem;
+            border: 1px solid $gold;
+            line-height: 1.7;
+            font-family: $Average, serif;
+            font-size: 1.5rem;
+            background-color: transparent;
+            padding: 1rem;
+            color: white;
+            outline: none;
+
+            option {
+                background-color: black;
+                color: white;
+            }
+        }
+
+       
+    }
+
+    .gold-btn {
+        margin: 4rem auto;
+    }
+}
+
+
+@media all and (max-width: 767px){
+    .reservations__wrapper {
+        flex-wrap: wrap;
+    }
+}
